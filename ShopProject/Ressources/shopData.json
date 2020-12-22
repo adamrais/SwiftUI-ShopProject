@@ -1,66 +1,66 @@
 [
     {
-        "name": "Birthday Cake"
+        "name": "Birthday Cake",
         "category":"Macarons",
         "id": 1,
-        "price":
-        "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?"
+        "price": 5,
+        "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?",
         "imageName": "BirthdayCake"
     },
     {
-        "name":
+        "name": "Chocolate Molten",
         "category":"Macarons",
         "id": 2,
-        "price":
-        "description":
+        "price": 5,
+        "description": "The Chocolate Molten Macaron has a milk chocolate shell filled with dark chocolate ganache and a rich molten center!",
         "imageName": "ChocolateMolten"
     },
     {
-        "name":
+        "name": "Cookie Dough",
         "category":"Macarons",
         "id": 3,
-        "price":
-        "description":
+        "price": 5,
+        "description": "Who says you can't eat cookie dough? The Cookie Dough Macaron has all the buttery goodness of your favorite cookie with mini chocolate chips.",
         "imageName": "CookieDough"
     },
     {
-        "name":
+        "name": "Fruity Cereal",
         "category":"Macarons",
         "id": 4,
-        "price":
-        "description":
+        "price":  5,
+        "description": "Our Fruity Cereal Macaron is your childhood treat all grown up. Enjoy the sweetness of the fruity flavor without the sugar overload.",
         "imageName": "FruityCereal"
     },
     {
-        "name":
+        "name": "Peanut Butter & Jelly",
         "category":"Macarons",
         "id": 5,
-        "price":
-        "description":
+        "price": 5,
+        "description": "You'll go nuts for the Peanut Butter & Jelly Macaron, with an all-natural, creamy peanut butter filling and a grape jelly surprise in the center.",
         "imageName": "PeanutButterJelly"
     },
     {
-        "name":
+        "name": "Raspberry Jam",
         "category":"Macarons",
         "id": 6,
-        "price":
-        "description":
+        "price": 5,
+        "description": "With its delicious raspberry center and powdered sugar shell you won't be able to resist what is possibly our new favorite flavor... Raspberry 'Jam'! Dairy Free*",
         "imageName": "RaspberryJam"
     },
     {
-        "name":
+        "name": "Red Velvet",
         "category":"Macarons",
         "id": 7,
-        "price":
-        "description":
+        "price": 5,
+        "description": "With its lush red shell and savory cream cheese filling, this Red Velvet Macaron is certain to steal the show.",
         "imageName": "RedVelvet"
     },
     {
-        "name":
+        "name": "Strawberry Shortcake"
         "category":"Macarons",
         "id": 8,
-        "price":
-        "description":
+        "price": 5,
+        "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic."
         "imageName": "StrawberryCake"
     },
     {
