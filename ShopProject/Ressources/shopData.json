@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Birthday Cake"
+        "category":"Macarons",
+        "id": 1,
+        "price":
+        "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?"
+        "imageName": "BirthdayCake"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 2,
+        "price":
+        "description":
+        "imageName": "ChocolateMolten"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 3,
+        "price":
+        "description":
+        "imageName": "CookieDough"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 4,
+        "price":
+        "description":
+        "imageName": "FruityCereal"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 5,
+        "price":
+        "description":
+        "imageName": "PeanutButterJelly"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 6,
+        "price":
+        "description":
+        "imageName": "RaspberryJam"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 7,
+        "price":
+        "description":
+        "imageName": "RedVelvet"
+    },
+    {
+        "name":
+        "category":"Macarons",
+        "id": 8,
+        "price":
+        "description":
+        "imageName": "StrawberryCake"
+    },
+    {
+        "name":
+        "category":"Boba",
+        "id": 9,
+        "price":
+        "description":
+        "imageName":
+    },
+    {
+        "name":
+        "category":"Boba",
+        "id": 10,
+        "price":
+        "description":
+        "imageName":
+    },
+    {
+        "name":
+        "category":"Boba",
+        "id": 11,
+        "price":
+        "description":
+        "imageName":
+    },
+    {
+        "name":
+        "category":"Boba",
+        "id": 12,
+        "price":
+        "description":
+        "imageName":
+    },
+    {
+        "name":
+        "category":"Cupcakes",
+        "id": 13,
+        "price":
+        "description":
+        "imageName":
+    }
+]
