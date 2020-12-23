@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ShopProjectApp: App {
+    @StateObject private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView(image: Image("BirthdayCake"))
+            ContentView()
+                .environmentObject(modelData)
         }
     }
 }

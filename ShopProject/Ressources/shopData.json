@@ -4,6 +4,7 @@
         "category":"Macarons",
         "id": 1,
         "price": 5,
+        "isFeatured": true,
         "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?",
         "imageName": "BirthdayCake"
     },
@@ -12,6 +13,7 @@
         "category":"Macarons",
         "id": 2,
         "price": 5,
+        "isFeatured": false,
         "description": "The Chocolate Molten Macaron has a milk chocolate shell filled with dark chocolate ganache and a rich molten center!",
         "imageName": "ChocolateMolten"
     },
@@ -20,6 +22,7 @@
         "category":"Macarons",
         "id": 3,
         "price": 5,
+        "isFeatured": false,
         "description": "Who says you can't eat cookie dough? The Cookie Dough Macaron has all the buttery goodness of your favorite cookie with mini chocolate chips.",
         "imageName": "CookieDough"
     },
@@ -28,6 +31,7 @@
         "category":"Macarons",
         "id": 4,
         "price":  5,
+        "isFeatured": false,
         "description": "Our Fruity Cereal Macaron is your childhood treat all grown up. Enjoy the sweetness of the fruity flavor without the sugar overload.",
         "imageName": "FruityCereal"
     },
@@ -36,6 +40,7 @@
         "category":"Macarons",
         "id": 5,
         "price": 5,
+        "isFeatured": false,
         "description": "You'll go nuts for the Peanut Butter & Jelly Macaron, with an all-natural, creamy peanut butter filling and a grape jelly surprise in the center.",
         "imageName": "PeanutButterJelly"
     },
@@ -44,6 +49,7 @@
         "category":"Macarons",
         "id": 6,
         "price": 5,
+        "isFeatured": false,
         "description": "With its delicious raspberry center and powdered sugar shell you won't be able to resist what is possibly our new favorite flavor... Raspberry 'Jam'! Dairy Free*",
         "imageName": "RaspberryJam"
     },
@@ -52,55 +58,62 @@
         "category":"Macarons",
         "id": 7,
         "price": 5,
+        "isFeatured": false,
         "description": "With its lush red shell and savory cream cheese filling, this Red Velvet Macaron is certain to steal the show.",
         "imageName": "RedVelvet"
     },
     {
-        "name": "Strawberry Shortcake"
+        "name": "Strawberry Shortcake",
         "category":"Macarons",
         "id": 8,
         "price": 5,
-        "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic."
+        "isFeatured": false,
+        "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic.",
         "imageName": "StrawberryCake"
     },
     {
-        "name":
+        "name": " ",
         "category":"Boba",
         "id": 9,
-        "price":
-        "description":
-        "imageName":
+        "price": 0,
+        "isFeatured": false,
+        "description": " ",
+        "imageName": " "
     },
     {
-        "name":
+        "name": " ",
         "category":"Boba",
         "id": 10,
-        "price":
-        "description":
-        "imageName":
+        "price": 0,
+        "isFeatured": false,
+        "description": " ",
+        "imageName": " "
     },
     {
-        "name":
+        "name": " ",
         "category":"Boba",
         "id": 11,
-        "price":
-        "description":
-        "imageName":
+        "price": 0,
+        "isFeatured": false,
+        "description": " ",
+        "imageName": " "
     },
     {
-        "name":
+        "name": " ",
         "category":"Boba",
         "id": 12,
-        "price":
-        "description":
-        "imageName":
+        "price": 0,
+        "isFeatured": false,
+        "description": " ",
+        "imageName": " "
     },
     {
-        "name":
+        "name": " ",
         "category":"Cupcakes",
         "id": 13,
-        "price":
-        "description":
-        "imageName":
+        "price": 0,
+        "isFeatured": false,
+        "description": " ",
+        "imageName": " "
     }
 ]

@@ -8,19 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var image: Image
-    
     var body: some View {
-        image
-            .clipShape(Rectangle())
-            .overlay(Rectangle().stroke(Color.gray, lineWidth: 4))
-            .shadow(radius: 7)
-            
+        CategoryHome()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(image: Image("FruityCereal"))
+        ContentView()
+            .environmentObject(ModelData())
     }
 }
