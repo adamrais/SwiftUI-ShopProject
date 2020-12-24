@@ -14,28 +14,34 @@ struct ProductDetail: View {
     var productIndex: Int {
         modelData.products.firstIndex(where: { $0.id == product.id })!
     }
+    
     var body: some View {
         ScrollView {
             Image("BackgroundMacarons")
                 .resizable()
                 .scaledToFit()
-                .frame(height: 300)
-                //.ignoresSafeArea(edges: .top)
+                //.frame(height: 300)
             
             RectangleImage(image: product.image)
                 .offset(y:-70)
                 .padding(.bottom, -80)
             
             VStack(alignment: .leading) {
-                Text(product.name)
-                    .font(.title)
+                HStack {
+                    Text(product.name)
+                        .font(.title)
+                        .foregroundColor(.primary)
+                    Spacer()
+                    FavoriteButton(isSet: $modelData.products[productIndex].isFavorite)
+                        .font(.title2)
+                }
                 
                 HStack {
                     Text("Price") // change for category after
                         .font(.title3)
                         .bold()
                     Spacer()
-                    Label(String(product.price) , systemImage: "dollarsign.circle") // need to make a correction
+                    Label(String(product.price) , systemImage: "dollarsign.circle")
                         .font(.title3)
                 }
                 .font(.subheadline)

@@ -17,9 +17,20 @@ struct CategoryItem: View {
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
-            Text(product.name)
-                .foregroundColor(.primary)
-                .font(.caption)
+            
+            HStack(alignment: .center) {
+                Text(product.name)
+                    .foregroundColor(.primary)
+                    .font(.caption) // might need to make this bigger
+                
+                Spacer()
+                
+                if product.isFavorite {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                }
+            }
+            
         }
         .padding(.leading, 15)
     }

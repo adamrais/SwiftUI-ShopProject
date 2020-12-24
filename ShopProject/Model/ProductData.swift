@@ -14,6 +14,7 @@ struct Product: Hashable, Codable, Identifiable {
     var price: Int
     var description: String
     var isFeatured: Bool
+    var isFavorite: Bool
     
     var category: Category
     enum Category: String, CaseIterable, Codable {
@@ -26,5 +27,9 @@ struct Product: Hashable, Codable, Identifiable {
     private var imageName: String
     var image: Image {
         Image(imageName)
+    }
+    
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
     }
 }

@@ -9,26 +9,43 @@ import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
-    
+    @State private var showingFavorites = false
+    @State private var showingCart = false
+
     var body: some View {
         NavigationView {
             List {
                 VStack(alignment: .center) {
-                    modelData.features[0].image
-                        .resizable()
-                        .scaledToFit()
-                        .frame(height: 200)
-                        .clipped()
-                        .listRowInsets(EdgeInsets())
-                    Text("Our most popular item is the " + modelData.features[0].name)
+                    Text("Most Popular item of the week")
                         .font(.headline)
+                    PageView(pages: modelData.features.map { FeatureCard(product: $0) })
+                        .aspectRatio(3 / 2, contentMode: .fit)
+                        .listRowInsets(EdgeInsets())
                 }
-                
+            
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
+                .listRowInsets(EdgeInsets())
             }
+            .listStyle(InsetListStyle())
             .navigationTitle("Small Pastry Shop")
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button(action: { showingFavorites.toggle() }) {
+                        Image(systemName: "heart")
+                            .accessibilityLabel("Favorite button")
+                    }
+                    Button(action: { showingFavorites.toggle() }) {
+                        Image(systemName: "cart")
+                            .accessibilityLabel("Favorite button")
+                    }
+                }
+            }
+            .sheet(isPresented: $showingFavorites) {
+                FavoriteList()
+                    .environmentObject(modelData)
+            }
         }
     }
 }

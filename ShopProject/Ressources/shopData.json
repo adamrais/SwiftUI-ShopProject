@@ -5,6 +5,7 @@
         "id": 1,
         "price": 5,
         "isFeatured": true,
+        "isFavorite": true,
         "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?",
         "imageName": "BirthdayCake"
     },
@@ -14,6 +15,7 @@
         "id": 2,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "The Chocolate Molten Macaron has a milk chocolate shell filled with dark chocolate ganache and a rich molten center!",
         "imageName": "ChocolateMolten"
     },
@@ -23,6 +25,7 @@
         "id": 3,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "Who says you can't eat cookie dough? The Cookie Dough Macaron has all the buttery goodness of your favorite cookie with mini chocolate chips.",
         "imageName": "CookieDough"
     },
@@ -32,6 +35,7 @@
         "id": 4,
         "price":  5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "Our Fruity Cereal Macaron is your childhood treat all grown up. Enjoy the sweetness of the fruity flavor without the sugar overload.",
         "imageName": "FruityCereal"
     },
@@ -41,6 +45,7 @@
         "id": 5,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "You'll go nuts for the Peanut Butter & Jelly Macaron, with an all-natural, creamy peanut butter filling and a grape jelly surprise in the center.",
         "imageName": "PeanutButterJelly"
     },
@@ -50,6 +55,7 @@
         "id": 6,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "With its delicious raspberry center and powdered sugar shell you won't be able to resist what is possibly our new favorite flavor... Raspberry 'Jam'! Dairy Free*",
         "imageName": "RaspberryJam"
     },
@@ -59,6 +65,7 @@
         "id": 7,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "With its lush red shell and savory cream cheese filling, this Red Velvet Macaron is certain to steal the show.",
         "imageName": "RedVelvet"
     },
@@ -68,6 +75,7 @@
         "id": 8,
         "price": 5,
         "isFeatured": false,
+        "isFavorite": false,
         "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic.",
         "imageName": "StrawberryCake"
     },
@@ -77,6 +85,7 @@
         "id": 9,
         "price": 0,
         "isFeatured": false,
+        "isFavorite": false,
         "description": " ",
         "imageName": " "
     },
@@ -86,6 +95,7 @@
         "id": 10,
         "price": 0,
         "isFeatured": false,
+        "isFavorite": false,
         "description": " ",
         "imageName": " "
     },
@@ -95,6 +105,7 @@
         "id": 11,
         "price": 0,
         "isFeatured": false,
+        "isFavorite": false,
         "description": " ",
         "imageName": " "
     },
@@ -104,6 +115,7 @@
         "id": 12,
         "price": 0,
         "isFeatured": false,
+        "isFavorite": false,
         "description": " ",
         "imageName": " "
     },
@@ -113,6 +125,7 @@
         "id": 13,
         "price": 0,
         "isFeatured": false,
+        "isFavorite": false,
         "description": " ",
         "imageName": " "
     }
