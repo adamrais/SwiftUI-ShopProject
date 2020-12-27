@@ -10,6 +10,7 @@ import SwiftUI
 struct FavoriteList: View {
     @State private var showFavoritesOnly = true
     @EnvironmentObject var modelData: ModelData
+    @Environment(\.presentationMode) var presentation
     
     var favoriteProduct: [Product] {
         modelData.products.filter { product in
@@ -27,6 +28,10 @@ struct FavoriteList: View {
                 }
             }
             .navigationTitle("Favorites")
+            .navigationBarItems(trailing:
+                Button("Close") {
+                    self.presentation.wrappedValue.dismiss()
+                    })
         }
     }
 }

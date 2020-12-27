@@ -36,9 +36,9 @@ struct CategoryHome: View {
                         Image(systemName: "heart")
                             .accessibilityLabel("Favorite button")
                     }
-                    Button(action: { showingFavorites.toggle() }) {
+                    Button(action: { showingCart.toggle() }) {
                         Image(systemName: "cart")
-                            .accessibilityLabel("Favorite button")
+                            .accessibilityLabel("Cart button")
                     }
                 }
             }
