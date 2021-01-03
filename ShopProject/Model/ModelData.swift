@@ -11,8 +11,16 @@ import Combine
 final class ModelData: ObservableObject {
     @Published var products: [Product] = load("shopData.json")
     
+    static let macaronBoxSizes = ["6","12","24"]
+    @Published var macaronBoxSize = 0
+    @Published var quantity = 0
+    @Published var notificatonCart = 0
+    
     var features: [Product] {
         products.filter { $0.isFeatured }
+    }
+    var inCart: [Product] {
+        products.filter { $0.isInCart }
     }
     var categories: [String: [Product]] {
         Dictionary(
@@ -20,6 +28,17 @@ final class ModelData: ObservableObject {
             by: { $0.category.rawValue }
         )
     }
+    
+    func updatePrice(boxSize: Int) -> Int {
+       if boxSize == 0 {
+           return 8
+       } else if boxSize == 1 {
+           return 14
+       } else if boxSize == 2 {
+           return 26
+       }
+       return 0 // default value
+   }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

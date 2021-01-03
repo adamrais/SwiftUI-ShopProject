@@ -20,13 +20,22 @@ struct FavoriteList: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(favoriteProduct) { product in
-                    NavigationLink(destination: ProductDetail(product: product)) {
-                        ProductRow(product: product)
+            VStack {
+                if favoriteProduct.isEmpty {
+                    VStack {
+                        Text("You have no favorite products")
+                    }
+                } else {
+                    List {
+                        ForEach(favoriteProduct) { product in
+                            NavigationLink(destination: ProductDetail(product: product)) {
+                                ProductRow(product: product)
+                            }
+                        }
                     }
                 }
             }
+            .listStyle(PlainListStyle())
             .navigationTitle("Favorites")
             .navigationBarItems(trailing:
                 Button("Close") {

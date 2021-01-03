@@ -17,6 +17,7 @@ struct CategoryItem: View {
                 .resizable()
                 .frame(width: 155, height: 155)
                 .cornerRadius(5)
+                .overlay(Rectangle().stroke(Color.black, lineWidth: 2))
             
             HStack(alignment: .center) {
                 Text(product.name)

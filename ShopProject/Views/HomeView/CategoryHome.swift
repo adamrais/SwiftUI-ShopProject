@@ -11,12 +11,13 @@ struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showingFavorites = false
     @State private var showingCart = false
+    @State private var notificationNumber = 0
 
     var body: some View {
         NavigationView {
             List {
                 VStack(alignment: .center) {
-                    Text("Most Popular item of the week")
+                    Text("Most Popular items of the week")
                         .font(.headline)
                     PageView(pages: modelData.features.map { FeatureCard(product: $0) })
                         .aspectRatio(3 / 2, contentMode: .fit)
@@ -36,16 +37,20 @@ struct CategoryHome: View {
                         Image(systemName: "heart")
                             .accessibilityLabel("Favorite button")
                     }
+                    .sheet(isPresented: $showingFavorites) {
+                        FavoriteList()
+                            .environmentObject(modelData)
+                    }
                     Button(action: { showingCart.toggle() }) {
-                        Image(systemName: "cart")
-                            .accessibilityLabel("Cart button")
+                        CartButton(labelNumber: modelData.notificatonCart)
+                    }
+                    .sheet(isPresented: $showingCart) {
+                        CartDetailView()
+                            .environmentObject(modelData)
                     }
                 }
             }
-            .sheet(isPresented: $showingFavorites) {
-                FavoriteList()
-                    .environmentObject(modelData)
-            }
+            
         }
     }
 }

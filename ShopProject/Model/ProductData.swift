@@ -15,13 +15,20 @@ struct Product: Hashable, Codable, Identifiable {
     var description: String
     var isFeatured: Bool
     var isFavorite: Bool
+    var isInCart: Bool
+    var quantity: Int
     
     var category: Category
     enum Category: String, CaseIterable, Codable {
         case macarons = "Macarons"
         case boba = "Boba"
         case cupcakes = "Cupcakes"
+        case sets = "Sets"
         //... more items to add after
+    }
+    enum ActiveAlert {
+        case first
+        case second
     }
     
     private var imageName: String
