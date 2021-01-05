@@ -1,5 +1,5 @@
 language: objective-c
 osx_image: xcode12.3
-xcode_project: /Users/adamrais/Desktop/Xcode/ShopProject/ShopProject.xcodeproj # path to your xcodeproj folder
-xcode_scheme: ShopProject
-xcode_destination: platform=iOS Simulator,OS=14.3,name=iPhone 12
+
+script:
+  - xcodebuild test -project ShopProject/ShopProject.xcodeproj -scheme ShopProject -destination "platform=iOS Simulator,name=iPhone 12" -sdk iphonesimulator14.3 CODE_SIGNING_REQUIRED=NO
