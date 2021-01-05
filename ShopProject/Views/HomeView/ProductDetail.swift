@@ -12,6 +12,8 @@ struct ProductDetail: View {
     var product: Product
     
     @State var quantity: Int = 0
+    @State private var boxType1: ModelData.boxType = .macarons
+    @State private var boxType2: ModelData.boxType = .cupcakes
     var productIndex: Int {
         modelData.products.firstIndex(where: { $0.id == product.id })!
     }
@@ -45,8 +47,13 @@ struct ProductDetail: View {
                         Spacer()
                         
                         if product.category.rawValue.contains("Sets") {
-                            Label(String(modelData.updatePrice(boxSize: modelData.macaronBoxSize)) , systemImage: "dollarsign.circle")
-                                .font(.title3)
+                            if product.id == 20 {
+                                Label(String(modelData.updatePrice(boxSize: modelData.macaronBoxSize, boxType: boxType1)) , systemImage: "dollarsign.circle")
+                                    .font(.title3)
+                            } else if product.id == 21 {
+                                Label(String(modelData.updatePrice(boxSize: modelData.cupcakeBoxSize, boxType: boxType2)) , systemImage: "dollarsign.circle")
+                                    .font(.title3)
+                            }
                         } else {
                             Label(String(product.price) , systemImage: "dollarsign.circle")
                                 .font(.title3)
@@ -60,9 +67,7 @@ struct ProductDetail: View {
                         Stepper(value: $modelData.quantity, in: 0...20) {
                             Text("\(modelData.quantity)")
                                 .font(.title2)
-                        }//.onDisappear(perform: {
-                          //  modelData.quantity = 0
-                        //})
+                        }
                     }
                 }
                 .font(.subheadline)
@@ -71,10 +76,17 @@ struct ProductDetail: View {
                 if product.category.rawValue.contains("Sets") {
                     Divider()
                     VStack {
-                        Text("Select how many macarons you want in your box")
-                            .multilineTextAlignment(.leading)
-                        Spacer()
-                        MacaronBoxSizeView(product: product)
+                        if product.id == 20 {
+                            Text("Select how many macarons you want in your box")
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                            MacaronBoxSizeView(product: product)
+                        } else if product.id == 21 {
+                            Text("Select how many cupcakes you want in your box")
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                            CupcakesBoxSizeView(product: product)
+                        }
                     }
                 }
                 
