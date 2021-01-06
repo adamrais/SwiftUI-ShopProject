@@ -88,6 +88,12 @@ struct ProductDetail: View {
                             CupcakesBoxSizeView(product: product)
                         }
                     }
+                } else if product.category.rawValue.contains("Cupcakes") {
+                    Divider()
+                    VStack {
+                        Text("Cupcakes extras")
+                        CupcakesExtraView(product: product, setExtra: $modelData.products[productIndex].extraOptions, setFrosting: $modelData.products[productIndex].extraFrosting, setSprinkles: $modelData.products[productIndex].extraSprinkles)
+                    }
                 }
                 
                 Divider()

@@ -18,6 +18,18 @@ struct Product: Hashable, Codable, Identifiable {
     var isInCart: Bool
     var quantity: Int
     
+    var extraOptions: Bool {
+        didSet {
+            if extraOptions == false {
+                extraFrosting = false
+                extraSprinkles = false
+            }
+        }
+    }
+    var extraFrosting: Bool
+    var extraSprinkles: Bool
+    
+    
     var category: Category
     enum Category: String, CaseIterable, Codable {
         case macarons = "Macarons"

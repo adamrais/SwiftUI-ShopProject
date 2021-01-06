@@ -24,16 +24,26 @@ final class ModelData: ObservableObject {
     var inCart: [Product] {
         products.filter { $0.isInCart }
     }
+
+    var extraFrosting: [Product] {
+        products.filter { $0.extraFrosting }
+    }
+    var extraSprinkles: [Product] {
+        products.filter { $0.extraSprinkles }
+    }
+    
     var categories: [String: [Product]] {
         Dictionary(
             grouping: products,
             by: { $0.category.rawValue }
         )
     }
+    
     enum boxType {
         case macarons
         case cupcakes
     }
+    
     func updatePrice(boxSize: Int, boxType: boxType) -> Int {
         if boxType == .macarons {
             if boxSize == 0 {

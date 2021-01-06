@@ -11,7 +11,6 @@ struct CartDetailView: View {
     @State private var showCartItemsOnly = true
     @EnvironmentObject var modelData: ModelData
     @Environment(\.presentationMode) var presentation
-    //var product: Product
     
     var itemInCart: [Product] {
         modelData.products.filter { product in
@@ -28,6 +27,9 @@ struct CartDetailView: View {
                 List {
                     ForEach(itemInCart) { product in
                             ProductRow(product: product)
+                        if product.extraOptions {
+                            Text(String(product.extraFrosting))
+                        }
                     }
                 }
             }

@@ -8,6 +8,9 @@
         "isFavorite": true,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?",
         "imageName": "BirthdayCake"
     },
@@ -20,6 +23,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "The Chocolate Molten Macaron has a milk chocolate shell filled with dark chocolate ganache and a rich molten center!",
         "imageName": "ChocolateMolten"
     },
@@ -32,6 +38,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Who says you can't eat cookie dough? The Cookie Dough Macaron has all the buttery goodness of your favorite cookie with mini chocolate chips.",
         "imageName": "CookieDough"
     },
@@ -44,6 +53,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Our Fruity Cereal Macaron is your childhood treat all grown up. Enjoy the sweetness of the fruity flavor without the sugar overload.",
         "imageName": "FruityCereal"
     },
@@ -56,6 +68,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "You'll go nuts for the Peanut Butter & Jelly Macaron, with an all-natural, creamy peanut butter filling and a grape jelly surprise in the center.",
         "imageName": "PeanutButterJelly"
     },
@@ -68,6 +83,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "With its delicious raspberry center and powdered sugar shell you won't be able to resist what is possibly our new favorite flavor... Raspberry 'Jam'! Dairy Free*",
         "imageName": "RaspberryJam"
     },
@@ -80,6 +98,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "With its lush red shell and savory cream cheese filling, this Red Velvet Macaron is certain to steal the show.",
         "imageName": "RedVelvet"
     },
@@ -92,6 +113,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic.",
         "imageName": "StrawberryCake"
     },
@@ -104,6 +128,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": " ",
         "imageName": "Thai"
     },
@@ -116,6 +143,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": " ",
         "imageName": " "
     },
@@ -128,6 +158,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": " ",
         "imageName": " "
     },
@@ -140,6 +173,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": " ",
         "imageName": " "
     },
@@ -152,6 +188,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Southern style light chocolate cake with cream cheese frosting.",
         "imageName": "RedVelvetCupcake"
     },
@@ -164,6 +203,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Belgian dark chocolate cake with bittersweet chocolate frosting.",
         "imageName": "DarkChocolate"
     },
@@ -176,6 +218,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Birthday cake topped with vanilla buttercream and colorful non pareil sprinkles.",
         "imageName": "Sprinkle"
     },
@@ -188,6 +233,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Belgian dark chocolate cake with creamy vanilla frosting.",
         "imageName": "BlackAndWhite"
     },
@@ -200,6 +248,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Pure strawberry cake with sweet strawberry frosting.",
         "imageName": "Strawberry"
     },
@@ -212,6 +263,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel.",
         "imageName": "SaltyCaramel"
     },
@@ -224,6 +278,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Fresh banana cake with creamy vanilla frosting.",
         "imageName": "Banana"
     },
@@ -236,6 +293,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "A box of delicious macarons choosen by us. The box can contains 6, 12 or 24 macarons.",
         "imageName": "MacaronBox"
     },
@@ -248,6 +308,9 @@
         "isFavorite": false,
         "quantity": 0,
         "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
         "description": "Assorted box features our bestselling cupcakes flavors.",
         "imageName": "CupcakeBox"
     }
