@@ -11,9 +11,6 @@ struct CupcakesExtraView: View {
     @EnvironmentObject var modelData: ModelData
     var product: Product
     
-    @State private var extraOptions: Bool = false
-    @State private var extraFrosting: Bool = false
-    @State private var extraSprinkles: Bool = false
     @Binding var setExtra: Bool
     @Binding var setFrosting: Bool
     @Binding var setSprinkles: Bool
