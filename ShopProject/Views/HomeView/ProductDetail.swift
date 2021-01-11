@@ -23,22 +23,22 @@ struct ProductDetail: View {
             Image("BackgroundMacarons")
                 .resizable()
                 .scaledToFit()
-                //.frame(height: 300)
             
             RectangleImage(image: product.image)
                 .offset(y:-70)
                 .padding(.bottom, -80)
             
             VStack(alignment: .leading) {
-                HStack {
-                    Text(product.name)
-                        .font(.title)
-                        .foregroundColor(.primary)
-                    Spacer()
-                    FavoriteButton(isSet: $modelData.products[productIndex].isFavorite)
-                        .font(.title2)
-                }
-                
+                    HStack {
+                        Text(product.name)
+                            .font(.title)
+                            .foregroundColor(.primary)
+                        TagView(product: product)
+                        Spacer()
+                        FavoriteButton(isSet: $modelData.products[productIndex].isFavorite)
+                            .font(.title2)
+                    }
+
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Price") // change for category after
@@ -88,6 +88,11 @@ struct ProductDetail: View {
                             CupcakesBoxSizeView(product: product)
                         }
                     }
+                } else if product.category.rawValue.contains("Cupcakes") {
+                    Divider()
+                    VStack {
+                        CupcakesExtraView(product: product, setExtra: $modelData.products[productIndex].extraOptions, setFrosting: $modelData.products[productIndex].extraFrosting, setSprinkles: $modelData.products[productIndex].extraSprinkles)
+                    }
                 }
                 
                 Divider()
@@ -114,7 +119,7 @@ struct ProductDetail_Previews: PreviewProvider {
     static let modelData = ModelData()
     
     static var previews: some View {
-        ProductDetail(product: modelData.products[0])
+        ProductDetail(product: modelData.products[25])
             .environmentObject(modelData)
     }
 }

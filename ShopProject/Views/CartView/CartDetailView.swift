@@ -11,7 +11,6 @@ struct CartDetailView: View {
     @State private var showCartItemsOnly = true
     @EnvironmentObject var modelData: ModelData
     @Environment(\.presentationMode) var presentation
-    //var product: Product
     
     var itemInCart: [Product] {
         modelData.products.filter { product in
@@ -28,7 +27,10 @@ struct CartDetailView: View {
                 List {
                     ForEach(itemInCart) { product in
                             ProductRow(product: product)
-                    }
+                        if product.extraOptions {
+                            Text(String(product.extraFrosting))
+                        }
+                    }.onDelete(perform: delete)
                 }
             }
             .padding(.top)
@@ -39,6 +41,15 @@ struct CartDetailView: View {
                     self.presentation.wrappedValue.dismiss()
                     })
         }
+    }
+    
+    func delete(at offset: IndexSet) {
+        let openEvents = modelData.products.filter {
+            $0.isInCart == false
+        }
+        modelData.removeEvents(events: offset.map({
+            openEvents[$0]
+        }))
     }
 }
 
