@@ -44,6 +44,12 @@ final class ModelData: ObservableObject {
         case cupcakes
     }
     
+    func removeEvents(events: [Product]) {
+        products.removeAll(where: {
+            events.contains($0)
+        })
+    }
+    
     func updatePrice(boxSize: Int, boxType: boxType) -> Int {
         if boxType == .macarons {
             if boxSize == 0 {

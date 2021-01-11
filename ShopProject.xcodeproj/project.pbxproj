@@ -19,6 +19,7 @@
 		E544F28625984387005CE2D4 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F28525984387005CE2D4 /* ProductRow.swift */; };
 		E544F28D25984A6E005CE2D4 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F28C25984A6E005CE2D4 /* CartButton.swift */; };
 		E544F29025984C33005CE2D4 /* NotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F28F25984C33005CE2D4 /* NotificationBadge.swift */; };
+		E55C77A125A9257700E9BA20 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C77A025A9257700E9BA20 /* TagView.swift */; };
 		E567FA2C25900FDA00082479 /* ShopProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA2B25900FDA00082479 /* ShopProjectApp.swift */; };
 		E567FA2E25900FDA00082479 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA2D25900FDA00082479 /* ContentView.swift */; };
 		E567FA3025900FDB00082479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E567FA2F25900FDB00082479 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		E544F28525984387005CE2D4 /* ProductRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		E544F28C25984A6E005CE2D4 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E544F28F25984C33005CE2D4 /* NotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadge.swift; sourceTree = "<group>"; };
+		E55C77A025A9257700E9BA20 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		E567FA2825900FDA00082479 /* ShopProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E567FA2B25900FDA00082479 /* ShopProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProjectApp.swift; sourceTree = "<group>"; };
 		E567FA2D25900FDA00082479 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +131,13 @@
 			path = SettingsVIew;
 			sourceTree = "<group>";
 		};
+		E55C779F25A9253900E9BA20 /* BobaExtraView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BobaExtraView;
+			sourceTree = "<group>";
+		};
 		E567FA1F25900FDA00082479 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +198,7 @@
 		E567FA3D2590102100082479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E55C779F25A9253900E9BA20 /* BobaExtraView */,
 				E528BC6B25A3EA1F006B332A /* CupcakesExtrasView */,
 				E528BC1F259C1B84006B332A /* CartView */,
 				E544F289259843B7005CE2D4 /* SettingsVIew */,
@@ -223,6 +233,7 @@
 				E528BC19259ACEB2006B332A /* MacaronBoxSizeView.swift */,
 				E528BC25259E4F41006B332A /* addToCartButton.swift */,
 				E528BC6425A3E0C8006B332A /* CupcakesBoxSizeView.swift */,
+				E55C77A025A9257700E9BA20 /* TagView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -322,6 +333,7 @@
 				E544F27B259813E3005CE2D4 /* SearchBar.swift in Sources */,
 				E567FA4D2592B24400082479 /* ProductDetail.swift in Sources */,
 				E567FA4A2591AFE100082479 /* ModelData.swift in Sources */,
+				E55C77A125A9257700E9BA20 /* TagView.swift in Sources */,
 				E567FA2C25900FDA00082479 /* ShopProjectApp.swift in Sources */,
 				E544F28625984387005CE2D4 /* ProductRow.swift in Sources */,
 			);

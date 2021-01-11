@@ -18,6 +18,7 @@ struct Product: Hashable, Codable, Identifiable {
     var isInCart: Bool
     var quantity: Int
     
+    // MARKS: cupcakes extra
     var extraOptions: Bool {
         didSet {
             if extraOptions == false {
@@ -29,6 +30,12 @@ struct Product: Hashable, Codable, Identifiable {
     var extraFrosting: Bool
     var extraSprinkles: Bool
     
+    // MARKS: bobas extra
+    var tag: String?
+    enum Tags {
+        case milk
+        case fruit
+    }
     
     var category: Category
     enum Category: String, CaseIterable, Codable {

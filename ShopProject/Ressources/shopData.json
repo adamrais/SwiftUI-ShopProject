@@ -120,10 +120,11 @@
         "imageName": "StrawberryCake"
     },
     {
-        "name": " ",
+        "name": "Thai",
         "category":"Boba",
         "id": 9,
-        "price": 0,
+        "tag": "Milk",
+        "price": 4,
         "isFeatured": false,
         "isFavorite": false,
         "quantity": 0,
@@ -135,10 +136,11 @@
         "imageName": "Thai"
     },
     {
-        "name": " ",
+        "name": "Almond",
         "category":"Boba",
         "id": 10,
-        "price": 0,
+        "tag": "Milk",
+        "price": 4,
         "isFeatured": false,
         "isFavorite": false,
         "quantity": 0,
@@ -147,13 +149,14 @@
         "extraFrosting": false,
         "extraSprinkles": false,
         "description": " ",
-        "imageName": " "
+        "imageName": "Almond"
     },
     {
-        "name": " ",
+        "name": "Black",
         "category":"Boba",
         "id": 11,
-        "price": 0,
+        "tag": "Milk",
+        "price": 4,
         "isFeatured": false,
         "isFavorite": false,
         "quantity": 0,
@@ -162,13 +165,14 @@
         "extraFrosting": false,
         "extraSprinkles": false,
         "description": " ",
-        "imageName": " "
+        "imageName": "Black"
     },
     {
-        "name": " ",
+        "name": "Matcha",
         "category":"Boba",
         "id": 12,
-        "price": 0,
+        "tag": "Milk",
+        "price": 4,
         "isFeatured": false,
         "isFavorite": false,
         "quantity": 0,
@@ -177,7 +181,7 @@
         "extraFrosting": false,
         "extraSprinkles": false,
         "description": " ",
-        "imageName": " "
+        "imageName": "Matcha"
     },
     {
         "name": "Red Velvet Cupcake",
@@ -313,5 +317,85 @@
         "extraSprinkles": false,
         "description": "Assorted box features our bestselling cupcakes flavors.",
         "imageName": "CupcakeBox"
-    }
+    },
+    {
+        "name": "Green Apple",
+        "category":"Boba",
+        "id": 22,
+        "tag": "Fruit",
+        "price": 4,
+        "isFeatured": false,
+        "isFavorite": false,
+        "quantity": 0,
+        "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
+        "description": " ",
+        "imageName": "GreenApple"
+    },
+    {
+        "name": "Kiwi",
+        "category":"Boba",
+        "id": 23,
+        "tag": "Fruit",
+        "price": 4,
+        "isFeatured": false,
+        "isFavorite": false,
+        "quantity": 0,
+        "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
+        "description": " ",
+        "imageName": "Kiwi"
+    },
+    {
+        "name": "Peach",
+        "category":"Boba",
+        "id": 24,
+        "tag": "Fruit",
+        "price": 4,
+        "isFeatured": false,
+        "isFavorite": false,
+        "quantity": 0,
+        "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
+        "description": " ",
+        "imageName": "Peach"
+    },
+    {
+        "name": "Pineapple",
+        "category":"Boba",
+        "id": 25,
+        "tag": "Fruit",
+        "price": 4,
+        "isFeatured": false,
+        "isFavorite": false,
+        "quantity": 0,
+        "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
+        "description": " ",
+        "imageName": "Pineapple"
+    },
+    {
+        "name": "Raspberry",
+        "category":"Boba",
+        "id": 26,
+        "tag": "Fruit",
+        "price": 4,
+        "isFeatured": false,
+        "isFavorite": false,
+        "quantity": 0,
+        "isInCart": false,
+        "extraOptions": false,
+        "extraFrosting": false,
+        "extraSprinkles": false,
+        "description": " ",
+        "imageName": "Raspberry"
+    },
 ]
