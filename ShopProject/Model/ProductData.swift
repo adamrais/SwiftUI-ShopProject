@@ -24,6 +24,8 @@ struct Product: Hashable, Codable, Identifiable {
             if extraOptions == false {
                 extraFrosting = false
                 extraSprinkles = false
+                extraSlushy = false
+                extraTapioca = false
             }
         }
     }
@@ -32,9 +34,36 @@ struct Product: Hashable, Codable, Identifiable {
     
     // MARKS: bobas extra
     var tag: String?
+    var extraSlushy: Bool
+    var extraTapioca: Bool
     enum Tags {
         case milk
         case fruit
+    }
+    
+    func getExtraOrderString() -> String {
+        if extraFrosting == true || extraSprinkles == true {
+            if extraFrosting == true && extraSprinkles == true {
+                return "extra frosting/extra sprinkles"
+            } else {
+                if extraFrosting == true {
+                    return "extra frosting"
+                } else if extraSprinkles == true {
+                    return "extra sprinkles"
+                }
+            }
+        } else if extraSlushy == true || extraTapioca == true {
+            if extraSlushy == true && extraTapioca == true {
+                return "extra slushy/extra tapioca"
+            } else {
+                if extraSlushy == true {
+                    return "extra slushy"
+                } else if extraTapioca == true {
+                    return "extra tapioca"
+                }
+            }
+        }
+        return "no extra"
     }
     
     var category: Category

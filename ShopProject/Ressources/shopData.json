@@ -11,6 +11,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Celebrate your birthday everyday, with our delicious vanilla cake flavored confection. The Birthday Cake Macaron is served with a healthy dose of edible glitter and tie-dye shell, what's not to love?",
         "imageName": "BirthdayCake"
     },
@@ -26,6 +28,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "The Chocolate Molten Macaron has a milk chocolate shell filled with dark chocolate ganache and a rich molten center!",
         "imageName": "ChocolateMolten"
     },
@@ -41,6 +45,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Who says you can't eat cookie dough? The Cookie Dough Macaron has all the buttery goodness of your favorite cookie with mini chocolate chips.",
         "imageName": "CookieDough"
     },
@@ -56,6 +62,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Our Fruity Cereal Macaron is your childhood treat all grown up. Enjoy the sweetness of the fruity flavor without the sugar overload.",
         "imageName": "FruityCereal"
     },
@@ -71,6 +79,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "You'll go nuts for the Peanut Butter & Jelly Macaron, with an all-natural, creamy peanut butter filling and a grape jelly surprise in the center.",
         "imageName": "PeanutButterJelly"
     },
@@ -86,6 +96,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "With its delicious raspberry center and powdered sugar shell you won't be able to resist what is possibly our new favorite flavor... Raspberry 'Jam'! Dairy Free*",
         "imageName": "RaspberryJam"
     },
@@ -101,6 +113,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "With its lush red shell and savory cream cheese filling, this Red Velvet Macaron is certain to steal the show.",
         "imageName": "RedVelvet"
     },
@@ -116,6 +130,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Perfectly pink shells filled with a light buttercream and a strawberry fruit compote center. The Strawberry Shortcake Macaron is a classic.",
         "imageName": "StrawberryCake"
     },
@@ -132,6 +148,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Thai"
     },
@@ -148,6 +166,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Almond"
     },
@@ -164,6 +184,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Black"
     },
@@ -180,6 +202,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Matcha"
     },
@@ -195,6 +219,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Southern style light chocolate cake with cream cheese frosting.",
         "imageName": "RedVelvetCupcake"
     },
@@ -210,6 +236,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Belgian dark chocolate cake with bittersweet chocolate frosting.",
         "imageName": "DarkChocolate"
     },
@@ -225,6 +253,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Birthday cake topped with vanilla buttercream and colorful non pareil sprinkles.",
         "imageName": "Sprinkle"
     },
@@ -240,6 +270,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Belgian dark chocolate cake with creamy vanilla frosting.",
         "imageName": "BlackAndWhite"
     },
@@ -255,6 +287,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Pure strawberry cake with sweet strawberry frosting.",
         "imageName": "Strawberry"
     },
@@ -270,6 +304,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Caramel cake with a buttery caramel cream cheese frosting topped with fleur de sel.",
         "imageName": "SaltyCaramel"
     },
@@ -285,6 +321,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Fresh banana cake with creamy vanilla frosting.",
         "imageName": "Banana"
     },
@@ -300,6 +338,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "A box of delicious macarons choosen by us. The box can contains 6, 12 or 24 macarons.",
         "imageName": "MacaronBox"
     },
@@ -315,6 +355,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": "Assorted box features our bestselling cupcakes flavors.",
         "imageName": "CupcakeBox"
     },
@@ -331,6 +373,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "GreenApple"
     },
@@ -347,6 +391,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Kiwi"
     },
@@ -363,6 +409,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Peach"
     },
@@ -379,6 +427,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Pineapple"
     },
@@ -395,6 +445,8 @@
         "extraOptions": false,
         "extraFrosting": false,
         "extraSprinkles": false,
+        "extraSlushy": false,
+        "extraTapioca": false,
         "description": " ",
         "imageName": "Raspberry"
     },

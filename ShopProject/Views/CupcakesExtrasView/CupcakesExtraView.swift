@@ -22,11 +22,11 @@ struct CupcakesExtraView: View {
             }
             if setExtra {
                 Toggle(isOn: $setFrosting.animation()) {
-                    Text("Add extra frosting?")
+                    Text("Add extra frosting? (0.50$)")
                 }
                 
                 Toggle(isOn: $setSprinkles.animation()) {
-                    Text("Any extra sprinkles?")
+                    Text("Any extra sprinkles? (0.50$)")
                 }
             }
         }

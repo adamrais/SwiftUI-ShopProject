@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CartDetailView: View {
     @State private var showCartItemsOnly = true
+    @State private var boxType1: ModelData.boxType = .macarons
+    @State private var boxType2: ModelData.boxType = .cupcakes
+    @State private var bobaType: ModelData.boxType = .boba
     @EnvironmentObject var modelData: ModelData
     @Environment(\.presentationMode) var presentation
     
@@ -28,7 +31,9 @@ struct CartDetailView: View {
                     ForEach(itemInCart) { product in
                             ProductRow(product: product)
                         if product.extraOptions {
-                            Text(String(product.extraFrosting))
+                            Text(String(product.getExtraOrderString()))
+                        }
+                        if product.category.rawValue.contains("Boba") {                            Text(modelData.convertSizeToString(boxSize: modelData.bobaSize, boxType: bobaType))
                         }
                     }.onDelete(perform: delete)
                 }

@@ -11,9 +11,9 @@ struct ProductDetail: View {
     @EnvironmentObject var modelData: ModelData
     var product: Product
     
-    @State var quantity: Int = 0
     @State private var boxType1: ModelData.boxType = .macarons
     @State private var boxType2: ModelData.boxType = .cupcakes
+    @State private var bobaType: ModelData.boxType = .boba
     var productIndex: Int {
         modelData.products.firstIndex(where: { $0.id == product.id })!
     }
@@ -54,19 +54,13 @@ struct ProductDetail: View {
                                 Label(String(modelData.updatePrice(boxSize: modelData.cupcakeBoxSize, boxType: boxType2)) , systemImage: "dollarsign.circle")
                                     .font(.title3)
                             }
-                        } else {
-                            Label(String(product.price) , systemImage: "dollarsign.circle")
+                        } else if product.category.rawValue.contains("Boba") {
+                            Label(String(modelData.updatePrice(boxSize: modelData.bobaSize, boxType: bobaType)) , systemImage: "dollarsign.circle")
                                 .font(.title3)
                         }
-                    }
-                    
-                    HStack {
-                        Text("Quantity")
-                            .font(.title3)
-                            .bold()
-                        Stepper(value: $modelData.quantity, in: 0...20) {
-                            Text("\(modelData.quantity)")
-                                .font(.title2)
+                        else {
+                            Label(String(product.price) , systemImage: "dollarsign.circle")
+                                .font(.title3)
                         }
                     }
                 }
@@ -93,6 +87,15 @@ struct ProductDetail: View {
                     VStack {
                         CupcakesExtraView(product: product, setExtra: $modelData.products[productIndex].extraOptions, setFrosting: $modelData.products[productIndex].extraFrosting, setSprinkles: $modelData.products[productIndex].extraSprinkles)
                     }
+                } else if product.category.rawValue.contains("Boba") {
+                    Divider()
+                    VStack {
+                        Text("Select the size of your boba")
+                            .multilineTextAlignment(.leading)
+                        Spacer()
+                        BobaExtraView(product: product, setExtra: $modelData.products[productIndex].extraOptions, setSlushy: $modelData.products[productIndex].extraSlushy, setTapioca: $modelData.products[productIndex].extraTapioca)
+                    }
+                    
                 }
                 
                 Divider()

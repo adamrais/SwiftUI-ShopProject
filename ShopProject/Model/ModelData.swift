@@ -13,8 +13,10 @@ final class ModelData: ObservableObject {
     
     static let macaronBoxSizes = ["6","12","24"]
     static let cupcakeBoxSizes = ["6","12","18"]
+    static let bobaSizes = ["regular","jumbo"]
     @Published var macaronBoxSize = 0
     @Published var cupcakeBoxSize = 0
+    @Published var bobaSize = 0
     @Published var quantity = 0
     @Published var notificatonCart = 0
     
@@ -32,6 +34,13 @@ final class ModelData: ObservableObject {
         products.filter { $0.extraSprinkles }
     }
     
+    var extraSlushy: [Product] {
+        products.filter { $0.extraSlushy }
+    }
+    var extraTapioca: [Product] {
+        products.filter { $0.extraTapioca }
+    }
+    
     var categories: [String: [Product]] {
         Dictionary(
             grouping: products,
@@ -42,6 +51,7 @@ final class ModelData: ObservableObject {
     enum boxType {
         case macarons
         case cupcakes
+        case boba
     }
     
     func removeEvents(events: [Product]) {
@@ -67,10 +77,44 @@ final class ModelData: ObservableObject {
            } else if boxSize == 2 {
                return 28
            }
+        } else if boxType == .boba {
+            if bobaSize == 0 {
+                return 4
+            } else if boxSize == 1 {
+                return 6
+            }
         }
         
        return 0 // default value
    }
+    
+    func convertSizeToString(boxSize: Int, boxType: boxType) -> String {
+        if boxType == .macarons {
+            if boxSize == 0 {
+               return "6 macarons"
+           } else if boxSize == 1 {
+               return "12 macarons"
+           } else if boxSize == 2 {
+               return "24 macarons"
+           }
+        } else if boxType == .cupcakes {
+            if boxSize == 0 {
+               return "6 cupcakes"
+           } else if boxSize == 1 {
+               return "12 cupcakes"
+           } else if boxSize == 2 {
+               return "18 cupcakes"
+           }
+        } else if boxType == .boba {
+            if bobaSize == 0 {
+                return "regular"
+            } else if boxSize == 1 {
+                return "jumbo"
+            }
+        }
+        
+       return "0" // default value
+    }
 }
 
 func load<T: Decodable>(_ filename: String) -> T {
