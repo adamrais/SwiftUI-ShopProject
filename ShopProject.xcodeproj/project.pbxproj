@@ -20,6 +20,7 @@
 		E544F28D25984A6E005CE2D4 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F28C25984A6E005CE2D4 /* CartButton.swift */; };
 		E544F29025984C33005CE2D4 /* NotificationBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E544F28F25984C33005CE2D4 /* NotificationBadge.swift */; };
 		E55C77A125A9257700E9BA20 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C77A025A9257700E9BA20 /* TagView.swift */; };
+		E55C77A725AFB25100E9BA20 /* BobaExtraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55C77A625AFB25100E9BA20 /* BobaExtraView.swift */; };
 		E567FA2C25900FDA00082479 /* ShopProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA2B25900FDA00082479 /* ShopProjectApp.swift */; };
 		E567FA2E25900FDA00082479 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA2D25900FDA00082479 /* ContentView.swift */; };
 		E567FA3025900FDB00082479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E567FA2F25900FDB00082479 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		E544F28C25984A6E005CE2D4 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E544F28F25984C33005CE2D4 /* NotificationBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBadge.swift; sourceTree = "<group>"; };
 		E55C77A025A9257700E9BA20 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		E55C77A625AFB25100E9BA20 /* BobaExtraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BobaExtraView.swift; sourceTree = "<group>"; };
 		E567FA2825900FDA00082479 /* ShopProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E567FA2B25900FDA00082479 /* ShopProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopProjectApp.swift; sourceTree = "<group>"; };
 		E567FA2D25900FDA00082479 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		E55C779F25A9253900E9BA20 /* BobaExtraView */ = {
 			isa = PBXGroup;
 			children = (
+				E55C77A625AFB25100E9BA20 /* BobaExtraView.swift */,
 			);
 			path = BobaExtraView;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E567FA2E25900FDA00082479 /* ContentView.swift in Sources */,
+				E55C77A725AFB25100E9BA20 /* BobaExtraView.swift in Sources */,
 				E5D772772593E15200E743D1 /* PageView.swift in Sources */,
 				E567FA512592BC7200082479 /* CategoryHome.swift in Sources */,
 				E528BC21259C1BA2006B332A /* CartDetailView.swift in Sources */,
