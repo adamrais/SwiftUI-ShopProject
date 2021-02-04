@@ -16,10 +16,15 @@ struct Product: Hashable, Codable, Identifiable {
     var isFeatured: Bool
     var isFavorite: Bool
     var isInCart: Bool
-    var quantity: Int
+    var quantity: Int {
+        didSet {
+            quantity = 0 // might delete
+        }
+    }
     
     // MARKS: cupcakes extra
-    var extraOptions: Bool {
+    var extraOptions: Bool
+    {
         didSet {
             if extraOptions == false {
                 extraFrosting = false
@@ -39,6 +44,37 @@ struct Product: Hashable, Codable, Identifiable {
     enum Tags {
         case milk
         case fruit
+    }
+    
+    func getTotalOrderPrice(item: Double) -> Double {
+        var total = 0.0
+        total += item
+        total += getExtraOrderPrice()
+        return total
+    }
+    func getExtraOrderPrice() -> Double {
+        if extraFrosting == true || extraSprinkles == true {
+            if extraFrosting == true && extraSprinkles == true {
+                return 1
+            } else {
+                if extraFrosting == true {
+                    return 0.50
+                } else if extraSprinkles == true {
+                    return 0.50
+                }
+            }
+        } else if extraSlushy == true || extraTapioca == true {
+            if extraSlushy == true && extraTapioca == true {
+                return 1.25
+            } else {
+                if extraSlushy == true {
+                    return 0.75
+                } else if extraTapioca == true {
+                    return 0.50
+                }
+            }
+        }
+        return 0
     }
     
     func getExtraOrderString() -> String {

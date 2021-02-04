@@ -27,7 +27,7 @@ struct BobaExtraView: View {
             Divider()
             
             Toggle(isOn: $setExtra.animation()) {
-                Text("Any extra on your cupcake?")
+                Text("Any extra on your boba?")
             }
             if setExtra {
                 Toggle(isOn: $setSlushy.animation()) {

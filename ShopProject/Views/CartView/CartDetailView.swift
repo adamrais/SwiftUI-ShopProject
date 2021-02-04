@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CartDetailView: View {
     @State private var showCartItemsOnly = true
+    @State private var emptyCart = false
     @State private var boxType1: ModelData.boxType = .macarons
     @State private var boxType2: ModelData.boxType = .cupcakes
     @State private var bobaType: ModelData.boxType = .boba
@@ -27,16 +28,21 @@ struct CartDetailView: View {
                 Image("CartBackground")
                     .resizable()
                     .scaledToFit()
+                
+                if itemInCart.count == 0 {
+                    Text("No item in cart")
+                    //self.emptyCart = true
+                }
                 List {
                     ForEach(itemInCart) { product in
-                            ProductRow(product: product)
-                        if product.extraOptions {
-                            Text(String(product.getExtraOrderString()))
-                        }
-                        if product.category.rawValue.contains("Boba") {                            Text(modelData.convertSizeToString(boxSize: modelData.bobaSize, boxType: bobaType))
-                        }
+                            CartDetailRow(product: product)
+//                        HStack {
+//                            if product.category.rawValue.contains("Boba") {  Text(modelData.convertSizeToString(boxSize: modelData.bobaSize, boxType: bobaType))
+//                            }
+//                        }
                     }.onDelete(perform: delete)
                 }
+                hideButton(emptyCart: false)
             }
             .padding(.top)
             .listStyle(PlainListStyle())
@@ -55,6 +61,12 @@ struct CartDetailView: View {
         modelData.removeEvents(events: offset.map({
             openEvents[$0]
         }))
+    }
+}
+struct hideButton: View {
+    var emptyCart: Bool
+    var body: some View {
+        CheckoutButton().disabled(emptyCart)
     }
 }
 
