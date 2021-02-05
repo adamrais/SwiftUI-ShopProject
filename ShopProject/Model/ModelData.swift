@@ -20,6 +20,14 @@ final class ModelData: ObservableObject {
     @Published var quantity = 0
     @Published var notificatonCart = 0
     
+    var subtotal = 0
+    
+    func getSubtotal(total: Double) -> Double {
+        //add taxes after
+        subtotal += Int(total)
+        return Double(subtotal)
+    }
+    
     var features: [Product] {
         products.filter { $0.isFeatured }
     }
@@ -60,6 +68,9 @@ final class ModelData: ObservableObject {
         })
     }
     
+    func emptyCart() {
+        // implement emptyCart function
+    }
     func updatePrice(boxSize: Int, boxType: boxType) -> Int {
         if boxType == .macarons {
             if boxSize == 0 {
@@ -107,9 +118,9 @@ final class ModelData: ObservableObject {
            }
         } else if boxType == .boba {
             if bobaSize == 0 {
-                return "regular"
+                return "Regular"
             } else if boxSize == 1 {
-                return "jumbo"
+                return "Jumbo"
             }
         }
         

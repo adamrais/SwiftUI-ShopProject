@@ -63,6 +63,8 @@ struct ProductDetail: View {
                                 .font(.title3)
                         }
                     }
+//                    QuantityStepper(product: product)
+//                        .font(.title2)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
