@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct CheckoutButton: View {
+    @EnvironmentObject var modelData: ModelData
+    @State private var isCheckout = false
+    @State private var showAlert = false
+    @State private var clearCart = true
     var body: some View {
-        Button(action: {
-            //goes to summary page to show final price order
-            print("working")
-        }) {
-            labelCheckout(text: "Checkout", color: .white)
+        VStack {
+            Button(action: {
+                //goes to summary page to show final price order
+                isCheckout = true
+                showAlert = true
+            }) {
+                labelCheckout(text: "Checkout", color: .white)
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Order sent"), message: Text("Thank you for your order"), dismissButton: .default(Text("Okay")))
+            }
+            
+            NavigationLink(destination: CheckoutView(), isActive: $isCheckout) {
+                // add code later
+            }//.navigationBarHidden(true)
         }
+
     }
 }
 

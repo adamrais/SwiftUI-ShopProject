@@ -35,6 +35,8 @@
 		E567FA512592BC7200082479 /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA502592BC7200082479 /* CategoryHome.swift */; };
 		E567FA542592CF2A00082479 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA532592CF2A00082479 /* CategoryRow.swift */; };
 		E567FA572592D52100082479 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E567FA562592D52100082479 /* CategoryItem.swift */; };
+		E588F8A325CB9FAC00359974 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588F8A225CB9FAC00359974 /* CheckoutView.swift */; };
+		E588F8A925CBEE3600359974 /* ClearCartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588F8A825CBEE3600359974 /* ClearCartButton.swift */; };
 		E5D772702593DD5800E743D1 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D7726F2593DD5800E743D1 /* FeatureCard.swift */; };
 		E5D772732593E00900E743D1 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D772722593E00900E743D1 /* PageViewController.swift */; };
 		E5D772772593E15200E743D1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D772762593E15200E743D1 /* PageView.swift */; };
@@ -76,6 +78,8 @@
 		E567FA502592BC7200082479 /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		E567FA532592CF2A00082479 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		E567FA562592D52100082479 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		E588F8A225CB9FAC00359974 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		E588F8A825CBEE3600359974 /* ClearCartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCartButton.swift; sourceTree = "<group>"; };
 		E5D7726F2593DD5800E743D1 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		E5D772722593E00900E743D1 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E5D772762593E15200E743D1 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
@@ -218,8 +222,17 @@
 				E544F27E2598431F005CE2D4 /* HomeView */,
 				E5D772832593F60D00E743D1 /* Helpers */,
 				E5D772752593E13600E743D1 /* Page */,
+				E588F8A525CBA10600359974 /* CheckoutVIew */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E588F8A525CBA10600359974 /* CheckoutVIew */ = {
+			isa = PBXGroup;
+			children = (
+				E588F8A225CB9FAC00359974 /* CheckoutView.swift */,
+			);
+			path = CheckoutVIew;
 			sourceTree = "<group>";
 		};
 		E5D772752593E13600E743D1 /* Page */ = {
@@ -248,6 +261,7 @@
 				E55C77A025A9257700E9BA20 /* TagView.swift */,
 				E567F99025B29D5F00667D81 /* QuantityStepper.swift */,
 				E526865125C8ABFF00B6E8F0 /* CheckoutButton.swift */,
+				E588F8A825CBEE3600359974 /* ClearCartButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -329,6 +343,7 @@
 				E5D772772593E15200E743D1 /* PageView.swift in Sources */,
 				E567FA512592BC7200082479 /* CategoryHome.swift in Sources */,
 				E528BC21259C1BA2006B332A /* CartDetailView.swift in Sources */,
+				E588F8A925CBEE3600359974 /* ClearCartButton.swift in Sources */,
 				E5D772812593F57C00E743D1 /* FavoriteButton.swift in Sources */,
 				E5D7727B2593E6D800E743D1 /* PageControl.swift in Sources */,
 				E544F2712597F165005CE2D4 /* SearchView.swift in Sources */,
@@ -353,6 +368,7 @@
 				E567FA4A2591AFE100082479 /* ModelData.swift in Sources */,
 				E55C77A125A9257700E9BA20 /* TagView.swift in Sources */,
 				E567FA2C25900FDA00082479 /* ShopProjectApp.swift in Sources */,
+				E588F8A325CB9FAC00359974 /* CheckoutView.swift in Sources */,
 				E544F28625984387005CE2D4 /* ProductRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

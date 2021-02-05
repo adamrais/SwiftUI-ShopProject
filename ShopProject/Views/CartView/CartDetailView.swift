@@ -13,6 +13,8 @@ struct CartDetailView: View {
     @State private var boxType1: ModelData.boxType = .macarons
     @State private var boxType2: ModelData.boxType = .cupcakes
     @State private var bobaType: ModelData.boxType = .boba
+    @State private var subtotal: Double = 0
+    @State private var deliveryFees = 3.99
     @EnvironmentObject var modelData: ModelData
     @Environment(\.presentationMode) var presentation
     
@@ -29,20 +31,58 @@ struct CartDetailView: View {
                     .resizable()
                     .scaledToFit()
                 
-                if itemInCart.count == 0 {
-                    Text("No item in cart")
-                    //self.emptyCart = true
-                }
                 List {
                     ForEach(itemInCart) { product in
-                            CartDetailRow(product: product)
-//                        HStack {
-//                            if product.category.rawValue.contains("Boba") {  Text(modelData.convertSizeToString(boxSize: modelData.bobaSize, boxType: bobaType))
-//                            }
-//                        }
+                        CartDetailRow(subtotal: $subtotal, product: product)
+                        
                     }.onDelete(perform: delete)
                 }
-                hideButton(emptyCart: false)
+                if itemInCart.count == 0 {
+                    Text("No item in cart")
+                        .offset(y: -300)
+                        .font(.system(.title, design: .rounded))
+                    hideButton(emptyCart: true)
+                } else {
+                    Divider()
+                    HStack {
+                        Text("Articles(\(String(itemInCart.count))): ")
+                            .offset(x: -100)
+                        Text("\(modelData.getSubtotal(total: Double(subtotal)), specifier: "%.2f") CDN$")
+                            .offset(x: 100)
+                    }
+                    HStack {
+                        Text("Delivery fees: ")
+                            .offset(x: -91)
+                        Text("3.99 CDN$")
+                            .offset(x: 90)
+                    }
+                    HStack {
+                        Text("Subtotal: ")
+                            .offset(x: -107)
+                        Text("\(getDeliveryFees(), specifier: "%.2f") CDN$")
+                            .offset(x: 105)
+                    }
+                    HStack {
+                        Text("Taxes: ")
+                            .offset(x: -118)
+                        Text("\(getTaxes(), specifier: "%.2f") CDN$")
+                            .offset(x: 115)
+                    }
+                    HStack {
+                        Text("Total: ")
+                            .fontWeight(.bold)
+                            .offset(x: -115)
+                        Text("\(getTotalOrder(), specifier: "%.2f") CDN$")
+                            .fontWeight(.bold)
+                            .offset(x: 115)
+                    }
+                    Divider()
+                    
+                    
+                    hideButton(emptyCart: false).onTapGesture {
+                        modelData.emptyCart()
+                    }
+                }
             }
             .padding(.top)
             .listStyle(PlainListStyle())
@@ -62,11 +102,35 @@ struct CartDetailView: View {
             openEvents[$0]
         }))
     }
+    func getDeliveryFees() -> Double {
+        var deliveryFees = 3.99
+        for _ in itemInCart {
+            deliveryFees += subtotal
+        }
+        return deliveryFees
+    }
+    func getTaxes() -> Double {
+        let taxes = 0.15
+        var totalTaxes = 0.0
+        totalTaxes += (getDeliveryFees() * taxes)
+        
+        return totalTaxes
+    }
+    func getTotalOrder() -> Double {
+        var TotalOrder = 0.0
+        TotalOrder += (getDeliveryFees() + getTaxes())
+        
+        return TotalOrder
+    }
 }
 struct hideButton: View {
     var emptyCart: Bool
     var body: some View {
-        CheckoutButton().disabled(emptyCart)
+        if emptyCart == true {
+            CheckoutButton().hidden()
+        } else {
+            CheckoutButton()
+        }
     }
 }
 
